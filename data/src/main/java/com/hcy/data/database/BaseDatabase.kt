@@ -27,5 +27,8 @@ abstract class BaseDatabase : RoomDatabase() {
                 instance
             }
         }
+        fun sec(){
+
+        }
     }
 }
