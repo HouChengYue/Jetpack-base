@@ -18,7 +18,7 @@ interface BaseDao {
      * 按照字母排序查询
      */
     @Query("SELECT * FROM base_table ORDER BY word ASC")
-    fun getAlphabetizedWords(): Flow<Base>
+    fun getAlphabetizedWords(): Flow<List<Base>>
 
     @Insert(onConflict = OnConflictStrategy.IGNORE)
     suspend fun insert(pBase: Base)
